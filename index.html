@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Vaga</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <h1>Cadastro de Reserva de Vaga</h1>
+
+    <form id="cadastroForm" class="formulario">
+        <div class="form-item">
+            <label for="placa">Placa</label>
+            <input type="text" id="placa" placeholder="Placa do veículo" required>
+        </div>
+        <div class="form-item">
+            <label for="proprietario">Proprietário</label>
+            <input type="text" id="proprietario" placeholder="Nome do proprietário" required>
+        </div>
+        <div class="form-item">
+            <label for="apartamento">Apartamento</label>
+            <input type="text" id="apartamento" placeholder="Número do apartamento" required>
+        </div>
+        <div class="form-item">
+            <label for="bloco">Bloco</label>
+            <input type="text" id="bloco" placeholder="Bloco do apartamento" required></div>
+        <div class="form-item">
+            <label for="modelo">Modelo</label>
+            <input type="text" id="modelo" placeholder="Modelo do veículo" required>
+        </div>
+        <div class="form-item">
+            <label for="cor">Cor</label>
+            <input type="text" id="cor" placeholder="Cor do veículo" required>
+        </div>
+        <div class="form-item">
+            <label for="vaga">Vaga</label>
+            <input type="number" id="vaga" placeholder="Número da vaga" required>
+        </div>
+        <button id="btnSubmit" type="submit">Salvar</button>
+    </form>
+
+    <a href="listar.html">Ver Vagas Cadastradas</a>
+
+    <script src="./js/model/vagaModel.js"></script>
+    <script src="./js/view/cadastroView.js"></script>
+    <script src="./js/controller/vagaController.js"></script>
+</body>
+
+</html>

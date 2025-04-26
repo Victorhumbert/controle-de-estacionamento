@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Listar Vagas</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <h1>Vagas Cadastradas</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Placa</th>
+                <th>Proprietário</th>
+                <th>Apartamento</th>
+                <th>Bloco</th>
+                <th>Modelo</th>
+                <th>Cor</th>
+                <th>Vaga</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody id="vagasTableBody">
+        </tbody>
+    </table>
+
+    <a href="index.html">Cadastrar Nova Vaga</a>
+
+    <script src="./js/model/vagaModel.js"></script>
+    <script src="./js/view/listarView.js"></script>
+    <script src="./js/controller/vagaController.js"></script>
+</body>
+
+</html>
