@@ -1,0 +1,94 @@
+/* Estilo gerais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #333;
+  text-align: center;
+  margin: 20px 0;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: #007bff;
+  transition: color 0.3s ease;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #f8f9fa;
+  margin: 10px auto;
+  width: max-content;
+  transition: 0.3s ease;
+
+  &:hover {
+    color: #0056b3;
+    background-color: #e2e6ea;
+  }
+}
+
+/* Estilo página Reservar vaga */
+.formulario {
+  display: grid;
+  width: max-content;
+  background: #f3f3f3;
+  padding: 10px 20px;
+  border-radius: 5px;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  margin: auto;
+  gap: 4px;
+}
+
+.form-item {
+  display: grid;
+
+  & > input {
+    padding: 4px 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+}
+
+#btnSubmit {
+  background-color: #007bff;
+  color: white;
+  grid-column: span 2;
+  width: 100%;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+
+  &:hover {
+    background-color: #0056b3;
+  }
+}
+
+/* Estilo página Listagem de vagas */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px auto;
+}
+
+th,
+td {
+  padding: 5px;
+}
+
+#vagasTableBody {
+
+  & tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  & tr:hover {
+    background-color: #ddd;
+  }
+}
+
